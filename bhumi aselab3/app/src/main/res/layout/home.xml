@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cceeff"
+    >
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capture Photo"
+        android:id="@+id/photobutton"
+        android:onClick="captures"
+        android:layout_gravity="center_vertical"
+        android:layout_above="@+id/mapbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="77dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GET DIRECTIONS"
+        android:onClick="mymaps"
+        android:id="@+id/mapbutton"
+        android:layout_above="@+id/homebutton"
+        android:layout_alignLeft="@+id/photobutton"
+        android:layout_alignStart="@+id/photobutton"
+        android:layout_marginBottom="100dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGNOUT"
+        android:onClick="homes"
+        android:id="@+id/homebutton"
+        android:layout_marginBottom="156dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
